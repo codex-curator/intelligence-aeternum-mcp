@@ -1,6 +1,6 @@
 # Intelligence Aeternum MCP
 
-**AI training dataset marketplace exposed as MCP servers.** 2M+ museum artworks across 7 world-class institutions with on-demand 111-field Golden Codex AI enrichment. x402 USDC micropayments on Base L2.
+**AI training dataset marketplace exposed as MCP servers.** 2M+ museum artworks across 7 world-class institutions with on-demand 111-field Golden Codex AI enrichment. AI agents pay with x402 USDC on Base L2. Human buyers pay with Stripe.
 
 [![Research](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18667735-blue)](https://doi.org/10.5281/zenodo.18667735)
 [![Dataset](https://img.shields.io/badge/HuggingFace-Alexandria%20Aeternum-yellow)](https://huggingface.co/datasets/Metavolve-Labs/alexandria-aeternum-genesis)
@@ -52,6 +52,12 @@ AI Agent (Claude, GPT, etc.)
           13 tools: search, metadata, oracle, enrichment, compliance...
           Serves 2M+ artworks from Firestore manifest
           On-demand VLM enrichment via Gemini
+
+Human Buyer (Browser)
+    |
+    +---> Data Portal REST API / golden-codex.com
+          Stripe checkout for dataset purchases and enrichment
+          Same artifact delivery pipeline as x402
 ```
 
 ---
@@ -81,7 +87,7 @@ AI Agent (Claude, GPT, etc.)
 | Tool | Description |
 |------|-------------|
 | `price-listing` | Browse 7 purchasable data products with pricing |
-| `payment-methods` | Get accepted payment methods (USDC on Base L2) |
+| `payment-methods` | Get accepted payment methods (x402 USDC for agents, Stripe for humans) |
 | `make-purchase` | Purchase data with x402 USDC micropayment |
 
 ---
@@ -118,7 +124,12 @@ All source images are CC0/public domain. Enrichment metadata is commercially lic
 
 ## Payment
 
-Paid tools use **x402 USDC micropayments on Base L2**. No API keys, no subscriptions — AI agents pay autonomously.
+Two payment paths -- one marketplace, two buyer types:
+
+- **AI agents** pay with **x402 USDC micropayments on Base L2**. No API keys, no subscriptions -- agents pay autonomously per request.
+- **Human buyers** pay with **Stripe checkout**. Credit/debit cards, Apple Pay, Google Pay -- standard web checkout for dataset purchases and enrichment orders.
+
+### x402 Flow (AI Agents)
 
 1. Call a paid tool without payment
 2. Receive HTTP 402 with x402 payment envelope
@@ -127,6 +138,12 @@ Paid tools use **x402 USDC micropayments on Base L2**. No API keys, no subscript
 5. Receive data
 
 **Wallet:** `0xFE141943a93c184606F3060103D975662327063B`
+
+### Stripe Flow (Human Buyers)
+
+1. Select data products or enrichment services
+2. Complete Stripe checkout (cards, Apple Pay, Google Pay)
+3. Receive artifacts via the same delivery pipeline
 
 ### Genesis Epoch (Launch Pricing)
 
