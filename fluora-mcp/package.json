@@ -1,0 +1,36 @@
+{
+  "name": "@metavolve-labs/fluora-mcp",
+  "version": "1.0.0",
+  "description": "Intelligence Aeternum on Fluora — AI training dataset marketplace with 60,000+ museum artworks",
+  "main": "dist/main.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc && shx chmod +x dist/**/*.js",
+    "start": "node dist/main.js"
+  },
+  "keywords": [
+    "MCP",
+    "MonetizedMCP",
+    "AI",
+    "training-data",
+    "museum-art",
+    "provenance"
+  ],
+  "author": "Metavolve Labs",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.1",
+    "monetizedmcp-sdk": "file:monetizedmcp-sdk-0.1.23.tgz",
+    "shx": "^0.4.0",
+    "uuid": "^11.1.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^24.2.0",
+    "typescript": "^5.9.2"
+  }
+}
