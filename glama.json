@@ -1,4 +1,13 @@
 {
   "$schema": "https://glama.ai/mcp/schemas/server.json",
-  "maintainers": ["codex-curator"]
+  "maintainers": ["codex-curator"],
+  "name": "intelligence-aeternum-mcp",
+  "version": "1.0.0",
+  "title": "Intelligence Aeternum",
+  "description": "AI training dataset marketplace: 2M+ museum artworks across 7 institutions with on-demand 111-field Golden Codex enrichment. x402 USDC micropayments on Base L2.",
+  "license": "LicenseRef-Proprietary",
+  "repository": "https://github.com/codex-curator/intelligence-aeternum-mcp",
+  "homepage": "https://iaeternum.ai",
+  "security": "https://github.com/codex-curator/intelligence-aeternum-mcp/blob/master/SECURITY.md",
+  "keywords": ["mcp", "marketplace", "ai", "datasets", "museum-art", "provenance", "x402", "golden-codex"]
 }
