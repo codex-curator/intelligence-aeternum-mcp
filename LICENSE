@@ -1,0 +1,30 @@
+INTELLIGENCE AETERNUM DATA LICENSE v1.0
+Copyright (c) 2025-2026 Metavolve Labs, Inc.
+
+Source images: Public Domain (CC0) -- original museum works are not owned by us.
+Enrichment metadata: Copyright Metavolve Labs, Inc. Patent pending.
+Dataset curation and organization: Copyright Metavolve Labs, Inc.
+
+FREE USE (no license fee required):
+- Academic research (non-commercial)
+- Individual artists and researchers
+- Open-source projects (with attribution)
+- Educational institutions
+
+COMMERCIAL LICENSE REQUIRED (contact data@iaeternum.ai):
+- Corporate AI model training
+- Commercial product development
+- Autonomous agent data acquisition
+- Any revenue-generating use of enrichment metadata or curated datasets
+
+ATTRIBUTION REQUIREMENT (all uses):
+"Dataset provided by Intelligence Aeternum (iaeternum.ai), a Metavolve Labs project.
+Original artworks sourced from public domain museum collections."
+
+AB 2013 COMPLIANCE:
+Every commercial transaction includes an auto-generated California AB 2013
+compliance manifest covering all 12 required data provenance disclosure fields.
+
+Contact: data@iaeternum.ai
+API: https://api.iaeternum.ai/v1
+MCP: https://api.iaeternum.ai/mcp
